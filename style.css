@@ -3,7 +3,9 @@
     @author Rodrigo Sousa
 */
 
-/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* todos os comentarios terminam na coluna 75 */
+
+/* LAYOUT OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 
 /* variáveis */
 :root
@@ -14,6 +16,7 @@
     --rodape: #7c7c7c;
     --cabecalho: #d1d1d1;
 }
+/* FIM - variáveis */
 
 /* CSS Reset */
 *
@@ -31,44 +34,44 @@ body
     font-family: sans-serif, Roboto;
 }
 /* FIM - Fonte Padrão */
-/* FIM - LAYOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* FIM - LAYOUT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
 
-/* SMARTPHONE LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* SMARTPHONE LANDSCAPE OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 576px)
 {
 }
-/* FIM - SMARTPHONE LANDSCAPE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* FIM - SMARTPHONE LANDSCAPE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
 
-/* TABLET PORTRAIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* TABLET PORTRAIT OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 768px)
 {
 }
-/* FIM - TABLET PORTRAIT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* FIM - TABLET PORTRAIT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
 
-/* TABLET LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* TABLET LANDSCAPE OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 992px)
 {
 }
-/* FIM - TABLET LANDSCAPE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* FIM - TABLET LANDSCAPE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
 
-/* NOTEBOOK/PC - HD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* NOTEBOOK/PC - HD OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 1200px)
 {
 }
-/* FIM - NOTEBOOK/PC - HD <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* FIM - NOTEBOOK/PC - HD XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 
 
-/* NOTEBOOK/PC/TV - HD FULL HD 4K >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* NOTEBOOK/PC/TV - HD FULL HD 4K OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 1400px)
 {
 }
-/* FIM - NOTEBOOK/PC/TV - HD FULL HD 4K <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* FIM - NOTEBOOK/PC/TV - HD FULL HD 4K XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
