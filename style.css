@@ -1,0 +1,74 @@
+/*
+    folha de estilo do site acriancaeogato.com
+    @author Rodrigo Sousa
+*/
+
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* variáveis */
+:root
+{
+    --fundo: #fff6e0;
+    --texto: #2d2a26;
+    --retangulo: #ffffff;
+    --rodape: #7c7c7c;
+    --cabecalho: #d1d1d1;
+}
+
+/* CSS Reset */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FIM - CSS Reset */
+
+
+/* Fonte Padrão */
+body
+{
+    font-family: sans-serif, Roboto;
+}
+/* FIM - Fonte Padrão */
+/* FIM - LAYOUT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+/* SMARTPHONE LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px)
+{
+}
+/* FIM - SMARTPHONE LANDSCAPE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+/* TABLET PORTRAIT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px)
+{
+}
+/* FIM - TABLET PORTRAIT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+/* TABLET LANDSCAPE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px)
+{
+}
+/* FIM - TABLET LANDSCAPE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+/* NOTEBOOK/PC - HD >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px)
+{
+}
+/* FIM - NOTEBOOK/PC - HD <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+
+/* NOTEBOOK/PC/TV - HD FULL HD 4K >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1400px)
+{
+}
+/* FIM - NOTEBOOK/PC/TV - HD FULL HD 4K <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
