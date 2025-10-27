@@ -34,14 +34,75 @@ body
 {
     font-family: sans-serif, Roboto;
 }
+.container
+{
+    display: flex;
+}
+header
+{
+    height: 65px;
+    background-color: var(--cabecalho);
+}
+.logo img
+{
+    width: 128px;
+    height: 128px;
+}
+#check
+{
+    display: none; /*esconder um elemento*/
+}
+label
+{
+    font-size: 3rem;
+    color:rgba(156,220,254,0.75);
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+nav ul
+{
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(0,0,0,0.9);
+    width: 65%;
+    right: -65%; /*Ajustar com width*/
+    transition: all 0.5s;
+}
+/* ação para a caixa checkbox.
+Quando selecionado mudar ul */
+#check:checked~ul
+{
+    right: 0;
+}
+nav ul li
+{
+    padding: 20px;
+    border-bottom: 1px solid var(--rodape);
+    text-align: right;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: var(--retangulo);
+}
 /* FIM - Fonte Padrão */
 /* FIM - LAYOUT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 
 /* SMARTPHONE LANDSCAPE OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 576px)
 {
+    nav ul
+    {
+        width: 40%;
+        right: -40%;
+    }
 }
 /* FIM - SMARTPHONE LANDSCAPE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
@@ -66,6 +127,36 @@ body
 /* NOTEBOOK/PC - HD OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 1200px)
 {
+    header
+    {
+        height: 100px;
+    }
+
+    .logo img
+    {
+        width: 194px;
+        height: 194px;
+    }
+    label
+    {
+        display: none;
+    }
+    nav ul
+    {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    nav ul li
+    {
+        float: left;
+        border: 0;
+    }
+    nav ul li a:hover
+    {
+        color: var(--texto);
+    }
 }
 /* FIM - NOTEBOOK/PC - HD XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
