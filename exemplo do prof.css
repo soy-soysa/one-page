@@ -1,0 +1,355 @@
+/**
+    Folha de estilo do site professorramos.com
+    @author Professor José de Assis
+    @link https://joseassis.com.br
+*/
+
+/* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Variáveis */
+:root {
+    --azulClaro: #9cdcfe;
+    --azulMedio: #3498db;
+    --branco: #fff;
+    --cinzaClaro: #e8e8e8;
+    --cinzaMedio: #a1a1a1;
+    --cinzaEscuro: #343538;
+    --dourado: #ffc90e;
+    --preto: #000;
+    --rosa: #bc82b6;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;   
+}
+
+/* Botão */
+.btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--azulMedio);
+    padding: 10px 40px;
+    color: var(--branco);
+    border-radius: 25px;
+    border: 2px solid var(--branco);
+}
+
+/* Fim - Layout <<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+/* Smartphone portrait >>>>>>>>>>>>>>>>>> */
+
+/* Cabeçalho */
+header {
+    height: 65px;
+    background-color: var(--preto);
+}
+
+.logo img {
+    width: 128px;
+    height: 128px;
+}
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3rem;
+    color: rgba(156, 220, 254, 0.75);
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 65%;
+    right: -65%;   
+    transition: all 0.5s;
+}
+
+/* ação para a caixa checkbox */
+/* quando selecionada mudar ul */
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--cinzaEscuro);
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--azulClaro);
+}
+
+/* Principal */
+main {
+    height: 50vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--branco);
+    font-family: "Koulen", sans-serif;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: var(--dourado);
+    font-size: 1.85rem;
+    font-weight: 900;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Destaque */
+#destaque {
+    padding: 50px 10px;
+    background: url(./img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.hero-text h2 {
+    font-size: 1.6rem;
+    color: var(--dourado);
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: var(--branco);
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.topic p {
+    margin-left: 15px;
+}
+
+/* Fim - Smartphone portrait <<<<<<<<<<<< */
+
+
+/* Smartphone landscape >>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+
+    /* Layout */
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    nav ul {
+        width: 40%;
+        right: -40%;
+    }
+
+    /* Principal */
+    main {
+        height: 75vh;
+    }
+
+    main h1 {
+        font-size: 2.75rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Destaque */
+    #destaque {
+        padding: 50px 0px;
+    }
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .topic {
+        display: none;
+    }
+
+}
+
+/* Fim - Smartphone landscape <<<<<<<<<<< */
+
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+
+    /* Principal */
+    main h1 {
+        font-size: 3.9rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Fim - Tablet portrait <<<<<<<<<<<<<<<< */
+
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+    /* Layout */
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Fim - Tablet landscape <<<<<<<<<<<<<<< */
+
+
+/* Notebook / PC >>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+
+    /* Layout */
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
+        height: 100px;
+    }
+
+    .logo img {
+        width: 194px;
+        height: 194px;
+    }
+
+    label {
+        display: none;
+    }
+
+    nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a:hover {
+        color: var(--dourado);
+    }
+
+    /* Principal */
+    main {
+        height: 89vh;
+    }
+
+    /* Destaque */
+    #destaque {
+        /* background-attachment: fixed; */
+    }
+
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .topic {
+        display: flex;
+    }
+
+}
+
+/* Fim - Notebook / PC <<<<<<<<<<<<<<<<<< */
+
+
+/* Full HD / 4K >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1400px) {
+
+    /* Layout */
+    .container {
+        max-width: 1320px;
+    }
+
+    /* Principal */
+    main h1 {
+        font-size: 6rem;
+    }
+
+     main h2 {
+        font-size: 4rem;
+    }
+}
+
+/* Fim - Full HD / 4K <<<<<<<<<<<<<<<<<<< */

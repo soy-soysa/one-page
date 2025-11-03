@@ -16,6 +16,7 @@
     --retangulo: #ffffff;
     --rodape: #7c7c7c;
     --cabecalho: #d1d1d1;
+    --titulo: #4e3e00;
 }
 /* FIM - variáveis */
 
@@ -37,6 +38,17 @@ body
 .container
 {
     display: flex;
+}
+.btn
+{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--azulMedio);
+    padding: 10px 40px;
+    color: var(--branco);
+    border-radius: 25px;
+    border: 2px solid var(--branco);
 }
 header
 {
@@ -88,6 +100,83 @@ nav ul li a
     text-decoration: none;
     color: var(--retangulo);
 }
+
+/* PRINCIPAL */
+
+main {
+    height: 50vh;
+    background: url(img/folhas.png);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1
+{
+    color: var(--titulo);
+    font-family: "Koulen", sans-serif;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+main h2
+{
+    color: var(--texto);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* DESTAQUE */
+
+#destaque
+{
+    padding: 70px 70px;
+    background: url(./img/pergaminho.png);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--fundo);
+    width: 370px;
+    height: 450px;
+    text-align: center;
+}
+#destaque .container
+{
+    flex-direction: column;
+}
+#hero
+{
+    text-align: center;
+}
+.hero-text h2
+{
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--texto);
+    margin-bottom: 5px;
+}
+.topic
+{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.topic img
+{
+    width: 50px;
+    height: 50px;
+}
+.topic p
+{
+    margin-left: 15px;
+}
 /* FIM - Fonte Padrão */
 /* FIM - LAYOUT XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
@@ -98,10 +187,54 @@ nav ul li a
 /* SMARTPHONE LANDSCAPE OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
 @media (min-width: 576px)
 {
-    nav ul
+    /*nav ul
     {
         width: 40%;
         right: -40%;
+    }*/
+
+/* PRINCIPAL */
+
+    main
+    {
+        height: 75vh;
+    }
+
+    main h1
+    {
+        font-size: 2.0rem;
+    }
+
+    main h2
+    {
+        font-size: 1.2rem;
+    }
+
+
+/* DESTAQUE */
+
+    #destaque
+    {
+        padding: 70px 30px;
+    }
+    #destaque .container
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+    #hero
+    {
+        text-align: left;
+    }
+    #hero img
+    {
+        width: 370px;
+        height: 370px;
+
+    }
+    .topic
+    {
+        display: none;
     }
 }
 /* FIM - SMARTPHONE LANDSCAPE XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
@@ -156,6 +289,26 @@ nav ul li a
     nav ul li a:hover
     {
         color: var(--texto);
+    }
+
+    /* DESTAQUE */
+
+    #destaque
+    /*{
+        background-attachment: fixed; Efeito Parallax
+    }*/
+    #hero img
+    {
+        width: 400px;
+        height: 400px;
+    }
+    .hero-text h2
+    {
+        font-size: 2rem;
+    }
+    .topic
+    {
+        display: flex;
     }
 }
 /* FIM - NOTEBOOK/PC - HD XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
